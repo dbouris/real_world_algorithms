@@ -1,4 +1,6 @@
 import argparse
+
+# initialize and parameterize the parser
 parser = argparse.ArgumentParser()
 group = parser.add_mutually_exclusive_group()
 group.add_argument('-a', action='store_true' ,default="")
@@ -44,6 +46,7 @@ def printTheArray(arr, n):
     visited[s]= 0 
     all.append(l)
 
+# function to find the cycle in the code
 def find_cyrcle(x):
     l = list(x)
     for i in range(0,len(x)):
@@ -55,7 +58,7 @@ def find_cyrcle(x):
         l = list(x)
     return -1
 
-
+# function to get the full binary representation of the code
 def full_binary(n,delta,par):
     x = "0"*n
     final = []
@@ -71,7 +74,8 @@ def full_binary(n,delta,par):
     if par != -1:
         final.pop(-1)
     return final
-        
+
+# function to prin the code in matrix form
 def print_in_matrix(full):
     for i in range(0,n):
         for x in full:
@@ -88,7 +92,7 @@ def flip(x,i,k):
     x = "".join(l)
     return x 
 
-
+# check if the code is Canonic
 def check_canonical(code):
     d = {}
     for i in range(0,n):
@@ -275,17 +279,6 @@ if args.a or args.p or args.c:
                 if args.m:
                     m = full_binary(n,i,-1)
                     print_in_matrix(m)
-
-
-
-
-
-
-
-
- 
-
-    
 
 elif args.b or args.u :
     all = []
