@@ -16,4 +16,4 @@ View the assignment instructions and solution [here](/Covering%20Points)
 ## Assignment 3: Beckett-Gray
 This assignment is about practicaly using the Beckett and Gray codes in a real world problem.
 
-View the assignment instructions and solution [here](/Beckett-Grey/)
+View the assignment instructions and solution [here](Beckett-Grey)
